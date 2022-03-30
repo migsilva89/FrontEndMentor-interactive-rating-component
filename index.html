@@ -19,20 +19,27 @@
       Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!
     </p>
-    <section class="numbers-container">
-      <div class="numbers">1</div>
-      <div class="numbers">2</div>
-      <div class="numbers">3</div>
-      <div class="numbers">4</div>
-      <div class="numbers">5</div>
+    <section id="allNumbers" class="numbers-container">
+      <button class="numbers"  id="btn1" onclick="btnPressed(1)">1</button>
+      <button class="numbers"  id="btn2" onclick="btnPressed(2)">2</button>
+      <button class="numbers"  id="btn3" onclick="btnPressed(3)">3</button>
+      <button class="numbers"  id="btn4" onclick="btnPressed(4)">4</button>
+      <button class="numbers"  id="btn5" onclick="btnPressed(5)">5</button>
     </section>
+    <div class="radio-container">
+      <input id="r1" name="radio" value="1" type="radio">
+      <input id="r2" name="radio" value="2" type="radio">
+      <input id="r3" name="radio" value="3" type="radio">
+      <input id="r4" name="radio" value="4" type="radio" checked>
+      <input id="r5" name="radio" value="5" type="radio">
+    </div>
     <div class="btn-container">
-      <input class="btn" type="submit">
+      <input class="btn" type="submit" >
     </div>
   </form>
 </main>
 
   
-
+<script src="app.js"></script>
 </body>
 </html>
