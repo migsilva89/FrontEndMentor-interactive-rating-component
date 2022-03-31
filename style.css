@@ -13,13 +13,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 250px;
     background-color: var(--very-dark-blue);
     font-family: 'Overpass', sans-serif;
+    margin-top: 250px;
 }
 
 .main {
-    border-radius: 12px;
+    border-radius: 20px;
     word-wrap: break-word;
     max-width:350px;
     background:-webkit-repeating-linear-gradient(var(--dark-blue),var(--very-dark-blue));
@@ -30,7 +30,7 @@ body {
     color:white;
 }
 
-.form-container {
+.card-container {
     padding:25px;
 }
 
@@ -101,4 +101,49 @@ body {
 
 .hide {
     display:none;
+}
+
+/* RESULT CARD */
+.img-container-result {
+    text-align: center;
+}
+
+.result-img {
+    width: 140px;
+    margin: 15px;
+}
+
+.asnwer-container {
+    text-align: center;
+    color: var(--orange);
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom:30px;
+}
+
+.answer {
+    border-radius: 40px;
+    padding: 5px;
+    margin-left:70px;
+    margin-right:70px;
+    background-color: var(--dark-blue);
+}
+
+.title-result {
+    color:white;
+    text-align: center;
+    font-weight:lighter;
+}
+
+.desc-text-result {
+    text-align: center;
+    color:var(--light-grey);
+    font-size:13.2px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        margin-top: 150px;
+    }
 }
