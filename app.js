@@ -1,48 +1,28 @@
-const radios = document.querySelectorAll("[name=radio]")//ALL RADIO BUTTONS
+const radios = document.querySelectorAll("[name=radio]")//SELECT ALL RADIOS
+const resultS = document.getElementById("resultS") // SELECT DIV RESULT 
+var selectedValue = 4 //Make the default selectedValue = 4
 
-function btnPressed(rate) {
-    // console.log("RADIOS::")
-    // console.log(parseInt(radios[0].value))
-    // console.log(typeof parseInt(radios[0].value))
-    // console.log("RATES::")
-    // console.log(rate)
-    // console.log(typeof rate)
-    // console.log("radios + rates =")
-    // console.log(rate + parseInt(radios[0].value))
+function btnPressed(result) {
 
+    //FOR LOOP TO GIVE US ALL THE RADIO INPUTS TO [i]
+    for (var i = 0; i < radios.length; i++){
 
+        document.getElementById("btn" + (i + 1)).classList.remove("bg-selected")
 
-if (rate == parseInt(radios[0].value)){
-        document.getElementById("r1").checked = true
-        document.getElementById("btn1").classList.add("teste")
-        document.getElementById("btn4").classList.remove("teste")
+        if (result == parseInt(radios[i].value)){
+            document.getElementById("btn" + (i + 1)).classList.add("bg-selected")
+            radios[i].checked = true
+            selectedValue = (i + 1)
 
-    } else if (rate == parseInt(radios[1].value)){
-        document.getElementById("r2").checked = true
-        document.getElementById("btn2").classList.add("teste")
-        document.getElementById("btn4").classList.remove("teste")
+            // console.log::
+            console.log(`I pressed ${i + 1}`)
+            console.log(selectedValue)
+        }
     }
-
-
-
-
-    
 }
 
-
-
-
-
-
-
-
-// if (rate == parseInt(radios[0].value)){
-    //     document.getElementById("r1").checked = true
-    //     document.getElementById("btn1").classList.add("teste")
-    //     document.getElementById("btn4").classList.remove("teste")
-
-    // } else if (rate == parseInt(radios[1].value)){
-    //     document.getElementById("r2").checked = true
-    //     document.getElementById("btn2").classList.add("teste")
-    //     document.getElementById("btn4").classList.remove("teste")
-    // }
+function btnSubmit() {
+    const mainForm = document.getElementById("main-form")
+    mainForm.classList.add('hide')
+    resultS.classList.remove('hide')
+}
