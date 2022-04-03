@@ -15,7 +15,7 @@ body {
     justify-content: center;
     background-color: var(--very-dark-blue);
     font-family: 'Overpass', sans-serif;
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 .main {
@@ -28,6 +28,7 @@ body {
 
 .title {
     color:white;
+    margin-top:20px;
 }
 
 .card-container {
@@ -37,7 +38,7 @@ body {
 .numbers-container {
     display: flex;
     justify-content: space-between;
-    margin-top:30px;
+    margin-top:20px;
 }
 
 .numbers {
