@@ -21,7 +21,7 @@ body {
 .main {
     border-radius: 20px;
     word-wrap: break-word;
-    max-width:350px;
+    max-width:400px;
     background:-webkit-repeating-linear-gradient(var(--dark-blue),var(--very-dark-blue));
     box-shadow: 5px 2px 10px 5px rgb(15, 15, 15);
 }
@@ -31,12 +31,13 @@ body {
 }
 
 .card-container {
-    padding:25px;
+    padding:30px;
 }
 
 .numbers-container {
     display: flex;
     justify-content: space-between;
+    margin-top:30px;
 }
 
 .numbers {
@@ -51,12 +52,12 @@ body {
 
 .btn-container {
     text-align: center;
-    margin-top:18px
+    margin-top:25px
 }
 
 .star-img {
     border-radius: 50%;
-    padding: 12px;
+    padding: 15px;
     background-color:rgba(207, 207, 207, 0.1);
 }
 
@@ -66,18 +67,20 @@ body {
     font-weight:lighter;
     color:var(--light-grey);
     line-height: 1.5;
+    margin-top:30px;
 }
 
 .btn {
     background-color:var(--orange);
     border-style:none;
-    padding:15px 120px 15px 120px;
+    padding:15px 140px 15px 140px;
     border-radius:20px;
     color:white;
     font-family: 'Overpass', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+    margin-top:10px;
 }
 
 .btn:hover {
