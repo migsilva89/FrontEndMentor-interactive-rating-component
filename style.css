@@ -86,12 +86,14 @@ body {
 
 .btn:hover {
     background-color:white;
-    color:var(--orange)
+    color:var(--orange);
+    cursor:pointer;
 }
 
 .numbers:hover {
     background-color:var(--orange);
     color:white;
+    cursor:pointer;
 }
 
 .radio-container {
