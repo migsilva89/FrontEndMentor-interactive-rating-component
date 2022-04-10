@@ -8,6 +8,9 @@
     --dark-blue:hsl(213, 19%, 18%);
     --very-dark-blue:hsl(216, 12%, 8%);
 }
+:focus {
+    outline: 4px solid var(--orange);
+}
 
 body {
     display: flex;
